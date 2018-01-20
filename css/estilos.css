@@ -1,0 +1,492 @@
+/*selector de fuente o tipo de letra general para toda las paginas*/
+*{
+  font-family: 'Dancing Script', cursive;
+}
+/*decoracion de cabecera y enlaces*/
+.contenedor{
+  background-color: #5b7989;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contenedor  h1{
+  color: white;
+  width: 100%;
+  text-shadow: 2px 2px #02010a;
+}
+.titulo {
+width: 50%;
+padding-left: 3%;
+}
+.titulo h1{
+ font-size: 30px;
+}
+.enlaces{
+  width: 50%;
+  display: inline-flex;
+  flex-direction: row;
+  padding-top: 2%;
+  padding-left: 15%;
+}
+.enlaces h1{
+  font-size: 25px;
+
+}
+#inicio, #paisajes, #retratos{
+  width: 25%;
+  padding-top: 3%;
+  box-sizing:  border-box;
+}
+a h1{
+  color: white;
+  display: inline-block;
+  padding-right: 5%;
+  padding-bottom: .25%;
+  margin-top: -10%;
+}
+/*fin de la decoracion header*/
+/*///////////////////////////////////////////////////////////*/
+/*sombra de imagenes en general///////////////////////*/
+div div img{
+  box-shadow: 2px 2px #02010a;
+}
+/*///////////////////////////////////////////////////////////*/
+/*DECORACION IMAGEN CENTRAL///////////////////////*/
+.principal .primero div img{
+  width: 90%;
+}
+.principal .primero{
+  background-color: #82c3a6;
+  text-align: center;
+  padding: 2%;
+}
+/*///////////////////////////////////////////////////////////*/
+/*DECORACION IMAGENES IZQUIERDO Y DERECHO///////////////////////*/
+#segundo{
+  background-color: #d5c75f;
+  display: inline-flex;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-left: 2%;
+}
+#segundo div img{
+  width: 100%;
+  box-shadow: 2px 2px #82c3a6;
+}
+.retrato, .paisaje{
+  padding: 2%;
+  text-align: center;
+  width: 45%;
+}
+#pie_retrato, #pie_paisaje{
+  color: black;
+}
+
+/*footer decoration////////////////////////////////////////*/
+.piepie{
+  width: 100%;
+  height: 100%;
+
+}
+.icon{
+  width: 20px;
+  height: 20px;
+}
+
+section{
+  width: 100%;
+}
+article{
+  width: 25%;
+  display: inline-block;
+  float: left;
+  background-color: #C6d5c5;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 0px;
+  text-align: center;
+
+}
+article ul h1{
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+ul li{
+  list-style: none;
+  margin-top: -1px;
+  font-size: 20px;
+}
+li a{
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+/*/////ANIMACIONES INICIO////////*//*//////////////////////////*/
+.izquierda{
+  border: 2px #82c3a6;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  -moz-transition: -moz-transform 1s ease-out;
+   transition: transform 1s ease-out;
+ }
+.izquierda:hover {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+   transform: rotate(10deg);
+}
+/*//////////////////////////////////////////////////////////*/
+.derecha{
+  border: 2px #82c3a6;
+  animation-name: derecha-animacion;
+  animation-duration: 4s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.derecha:hover {
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+   transform: translateX(10px);
+}
+/*/////////////////////////////////////////////////*/
+/*decoracion retratos/////////////////////*/
+.firstfile, .secondfile{
+  background-color: #d5c75f;
+  display: inline-flex;
+  flex-direction: row;
+  padding-top: 2%;
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+.container div img{
+  width: 100%;
+}
+.retrato1, .retrato2, .retrato3,
+.retrato4, .retrato5, .retrato6 {
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+}
+.retrato1, .paisaje1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.retrato2, .retrato4, .retrato6,
+.paisaje2, .paisaje4, .paisaje6{
+  -webkit-filter: grayscale(100%);
+  -filter: grayscale(100%);
+}
+.retrato3, .paisaje3{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+/*/////////////////////////////////////////////////////*/
+/*decoracion paisajes/////////////////////*/
+.paisaje1, .paisaje2, .paisaje3,   /*//////*/
+.paisaje4, .paisaje5, .paisaje6 {  /*//////*/
+  padding: 2%;                     /*//////*/
+  text-align: center;              /*//////*/
+  width: 100%;                     /*//////*/
+}                                  /*//////*/
+/*/////////////////////////////////////////////////////*/
+/*///media querys para mobiles/////////////////////////////////////////////*/
+/*cabecera////////*/
+/*///media querys para mobiles/////////////////////////////////////////////*/
+@media (max-width:420px) {
+/*responsive titulo y enlaces para moviles//////////////*/
+.contenedor{
+  background-color: #5b7989;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contenedor  h1{
+  color: white;
+  width: 100%;
+  text-shadow: 2px 2px #02010a;
+}
+.titulo {
+width: 100%;
+padding-left: 1%;
+}
+.titulo h1{
+ font-size: 25px;
+ text-align: center;
+}
+.enlaces{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  padding-top: 0%;
+  padding-left: 18%;
+}
+.enlaces h1{
+  font-size: 20px;
+}
+#inicio, #paisajes, #retratos{
+  width: 25%;
+  padding-top: 5%;
+}
+a h1{
+  color: white;
+  display: inline-block;
+  padding-right: 5%;
+  padding-bottom: .25%;
+  margin-top: -10%;
+}
+  /*/////responsive para retratos //////////////////*/
+  .firstfile, .secondfile{
+    background-color: #d5c75f;
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-bottom: 2%;
+  }
+  .container div img{
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  .retrato1, .retrato2, .retrato3,
+  .retrato4, .retrato5, .retrato6 {
+    padding: 2%;
+    text-align: center;
+    width: 95%;
+  }
+/*responsive para moviles paisajes*/*/*/////*/
+  .paisaje1, .paisaje2, .paisaje3,   /*//////*/
+  .paisaje4, .paisaje5, .paisaje6 {  /*//////*/
+    padding: 2%;                     /*//////*/
+    text-align: center;              /*//////*/
+    width: 95%;                     /*//////*/
+  }                                  /*//////*/
+  /*//////////////////////////////////////////////////////////////*/
+
+/*imagenes pagina principal*/
+  #segundo{
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-left: 2%;
+  }
+  #segundo div img{
+    width: 100%;
+    box-shadow: 2px 2px #82c3a6;
+  }
+  .retrato, .paisaje{
+    padding: 2%;
+    text-align: center;
+    width: 95%;
+  }
+  #pie_retrato, #pie_paisaje{
+    color: black;
+    font-size: 25px;
+  }
+/*///////////////////////////////////////////////////////*//*//////////*/
+/*pie de pagina responsive para móviles///////////////*/
+.piepie{
+  width: 100%;
+  height: 100%;
+
+}
+.icon{
+  width: 20px;
+  height: 20px;
+}
+
+section{
+  width: 100%;
+}
+article{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  background-color: #C6d5c5;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 0px;
+  text-align: center;
+
+}
+article ul h1{
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+ul li{
+  list-style: none;
+  margin-top: -1px;
+  font-size: 20px;
+}
+li a{
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+}
+/*//////////////////////////////////////////////////////////////////*/
+@media (min-width:421px) and (max-width:720px) {
+/*responsive titulo y enlaces para tabletas y iPad´s//////////////*/
+.contenedor{
+  background-color: #5b7989;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contenedor  h1{
+  color: white;
+  width: 100%;
+  text-shadow: 2px 2px #02010a;
+}
+.titulo {
+width: 100%;
+padding-left: 1%;
+}
+.titulo h1{
+ font-size: 35px;
+ text-align: center;
+}
+.enlaces{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  padding-top: 0%;
+  text-align: center;
+}
+.enlaces h1{
+  font-size: 30px;
+
+}
+#inicio, #paisajes, #retratos{
+  width: 23%;
+  padding-top: 3%;
+}
+a h1{
+  color: white;
+  display: inline-block;
+  padding-right: 5%;
+  padding-bottom: .25%;
+  margin-top: -10%;
+}
+  /*/////responsive para retratos //////////////////*/
+  .firstfile, .secondfile{
+    background-color: #d5c75f;
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-bottom: 2%;
+  }
+  .container div img{
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  .retrato1, .retrato2, .retrato3,
+  .retrato4, .retrato5, .retrato6 {
+    padding: 2%;
+    text-align: center;
+    width: 95%;
+  }
+/*responsive para moviles paisajes para tabletas y iPad/*//*///*/
+  .paisaje1, .paisaje2, .paisaje3,   /*//////*/
+  .paisaje4, .paisaje5, .paisaje6 {  /*//////*/
+    padding: 2%;                     /*//////*/
+    text-align: center;              /*//////*/
+    width: 95%;                     /*//////*/
+  }                                  /*//////*/
+  /*//////////////////////////////////////////////////////////////*/
+
+/*imagenes pagina principal para tabletas y iPad*/
+  #segundo{
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-left: 2%;
+  }
+  #segundo div img{
+    width: 100%;
+    box-shadow: 2px 2px #82c3a6;
+  }
+  .retrato, .paisaje{
+    padding: 2%;
+    text-align: center;
+    width: 95%;
+  }
+  #pie_retrato, #pie_paisaje{
+    color: black;
+    font-size: 25px;
+  }
+/*///////////////////////////////////////////////////////*//*//////////*/
+/*pie de pagina responsive para tabletas y iPad///////////////*/
+.piepie{
+  width: 100%;
+  height: 100%;
+
+}
+.icon{
+  width: 20px;
+  height: 20px;
+}
+
+section{
+  width: 100%;
+}
+article{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  background-color: #C6d5c5;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 0px;
+  text-align: center;
+
+}
+article ul h1{
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+ul li{
+  list-style: none;
+  margin-top: -1px;
+  font-size: 20px;
+}
+li a{
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+}
+/*ANIMACION SLIDEIN PARA AMBOS////////**/
+body{
+  background: #02010a;
+}
+#slidein{
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+    width: 100%;
+  }
+  60%{
+    margin-top: -5%;
+    width: 100%;
+  }
+  100% {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+/*FIN DE ANIMACION//////////////////////*/
